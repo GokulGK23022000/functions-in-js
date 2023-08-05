@@ -1,0 +1,53 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>JS</title>
+		</head>
+
+		
+		<body>
+			<script>
+			<!-- 1) . Write a JavaScript program to sort the items of an array. -->
+
+				var arr=[2,4,1,8,3];
+				console.log(arr.sort());
+			<!-- 2) Add an element to an array front and back without push and unshift -->
+				var list=[21,23,5]
+				var listnew= [...list,34];
+				console.log(listnew);
+				
+			<!-- 3. Find the names in the array -->
+
+				var list=[21,23,5]
+				var listnew= [34,...list];
+				console.log(listnew);
+				
+				let data = [{
+				name:"Ashok",
+				age:22,
+				address:"Gudiyatham"
+				},{
+				name:"gk",
+				age:29,
+				address:"Gudiyatham"
+				}
+				]
+				console.log(data[0].name);
+				
+				<!-- 4. Filter an array greater than 10 -->
+
+				const numbers = [5, 12, 8, 20, 6, 15, 3];
+				const d = numbers.filter(item => item > 10)
+					console.log(d);
+					
+				<!-- 5. Check the findindex less then 20 -->
+				const num = [55, 12, 8, 20, 26, 15, 3];
+				const index = num.findIndex(number => number < 20);
+				console.log(index); 
+			</script>
+				
+			
+	
+		</body>
+	</html>
+	
